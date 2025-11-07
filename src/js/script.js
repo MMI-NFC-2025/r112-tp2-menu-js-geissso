@@ -12,7 +12,7 @@ toggle.addEventListener("click", () => {
     const isClosed = !isOpen;
   nav.ariaHidden = isOpen;
   toggle.ariaExpanded = isClosed;
-  
+    document.body.classList.toggle("noscroll");
   console.log("isOpen : ", isOpen, "isClosed : ", isClosed);
 
 });
